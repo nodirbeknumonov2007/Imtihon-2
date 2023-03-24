@@ -1,14 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap);
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
 @import url(../CSS/common.css);
-@import url(../CSS/header.css);
-@import url(../CSS/home.css);
-@import url(../CSS/about.css);
-@import url(../CSS/advise.css);
-@import url(../CSS/services.css);
-@import url(../CSS/partner.css);
-@import url(../CSS/contact.css);
-@import url(../CSS/form.css);
-@import url(../CSS/footer.css);
+@import url(../CSS/header-min.css);
+@import url(../CSS/home-min.css);
+@import url(../CSS/about-min.css);
+@import url(../CSS/advise-min.css);
+@import url(../CSS/services-min.css);
+@import url(../CSS/partner-min.css);
+@import url(../CSS/contact-min.css);
+@import url(../CSS/form-min.css);
+@import url(../CSS/footer-min.css);
 
 
 :root{
