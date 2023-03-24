@@ -1,0 +1,127 @@
+header {
+  position: fixed;
+  background-color: var(--section-color);
+  left: 0;
+  right: 0;
+  z-index: 1;
+  box-shadow: 0 5px 10px -5px gray;
+}
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 195px;
+  transition: 0.3s;
+}
+.navbar-shrink {
+  padding: 20px 195px !important;
+}
+.logo {
+  display: inline-block;
+}
+.logo a {
+  font-size: 24px;
+  color: var(--contact-color);
+}
+.menu {
+  display: flex;
+}
+.menu li {
+  display: inline-block;
+  margin-left: 22px;
+  list-style: none;
+}
+.menu li a {
+  position: relative;
+  color: #737373;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.menu li a:after {
+  content: "";
+  position: absolute;
+  background: black;
+  height: 3px;
+  width: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -5px;
+  transition: 0.3s;
+}
+.menu li a:hover:after {
+  width: 100%;
+}
+.menu li a:hover {
+  color: black;
+}
+
+
+@media (max-width: 1285px){
+  #navbar{
+    padding: 24px 100px;
+}
+.navbar-shrink {
+  padding: 20px 100px !important;
+}
+}
+@media (max-width: 750px){
+  #navbar-responsive {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #EFF3F2;
+    transition: 0.5s;
+  }
+  .hamburger{
+    display: block;
+    background-color: transparent;
+  }
+  .close{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    background-color: transparent;
+    display: block;
+  }
+  .menu li a{
+    display: block;
+    margin-top: 20px;
+    font-size: 30px;
+    padding: 15px 30px;
+    color: #00A0C1;
+    border: 1px solid #00A0C1;
+    border-radius: 20px;
+}
+ .menu li a:hover{
+    background-color: #FFA62B;
+    color: white;
+    border-color: #FFA62B;
+}
+ .menu li a:after{
+    display: none;
+}
+}
+@media (max-width: 600px){
+  #navbar{
+    padding: 24px 50px;
+}
+.navbar-shrink {
+  padding: 20px 50px !important;
+}
+}
+@media (max-width: 450px){
+  #navbar{
+    padding: 24px 25px;
+}
+.navbar-shrink {
+  padding: 20px 25px !important;
+}
+}
